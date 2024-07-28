@@ -1,0 +1,171 @@
+body{
+    margin:0;
+}
+
+/** *{
+    text-decoration:none;
+    list-style:none;
+}
+**/
+
+.container{
+            width:950px;
+            height:100px;
+            /** border:1px solid red; **/
+            margin:0 auto;
+}
+.container .top{
+                float:left;
+                height:60px;
+                margin-top:20px;
+                /** border:1px solid grey; **/
+
+}
+.container .search{
+                width:300px;
+                float:right;
+                margin-right:100px;
+                line-height:100px;
+                /** border:1px solid green; **/
+}
+
+
+/**导航栏部分——早期写法**/
+/**
+.block{
+      height:53px;
+      width:1060px;
+      margin:0 auto;
+      background-color:#6ebd66;
+      border:1px solid blue;
+}
+.item{
+      float:left;
+      width:130px;
+      height:53px;
+      text-align:center;
+      line-height:53px;
+      color:white;
+      border:1px solid red;
+}
+**/
+
+/** 导航栏部分**/
+
+.nav{
+    width:960px;
+    margin:0 auto;
+    position:relative;
+    z-index:2; /* 如果图片或者其父级有设置层级，确保这个导航的层级 z-index 比图片的那个要大 */
+}
+
+.button{
+    float:left;
+    height:53px;
+    width:160px;
+    background:#13bd13;
+    text-align:center;
+    line-height:53px;
+    color:#fff;
+    cursor:pointer;
+}
+
+.droplist{
+    margin-top:0px;
+    margin-bottom:0px;
+    padding-left:0px;
+    background:#6ebd66;
+}
+
+.droplist li{
+    height:0px;
+    opacity:0;
+    transition:.5s;
+
+    list-style:none;
+}
+
+.droplist a{
+    color:#fff;
+    text-decoration:none;
+}
+
+.button:hover{
+    background:#6ebd66;
+}
+
+.button:hover li{
+    height:53px;
+    opacity:1;
+}
+
+.droplist li:hover {
+    background:blue;
+}
+
+/** 导航栏部分**/
+
+
+/** 图片部分**/
+.pic{
+    width:960px;
+    height:310px
+    border:1px solid red;
+    margin:0 auto;
+}
+/** 图片部分**/
+
+.container_x{
+             width:960px;
+             margin:0 auto;
+}
+
+.main_block{
+        margin-top:4px;
+        float:left;
+        width:320px;
+        height:300px;
+        text-align:center;
+        background:#e1e1e1
+        border:1px solid #aba6a6;
+}
+
+.title_01{
+        margin-top:4px;
+        float:left;
+        width:310px;
+        height:300px;
+        text-align:center;
+        border:solid blue 1px;
+}
+.an_niu{
+    float:left;
+    margin:0px 2px 12px 0px;
+    background:black;
+    color:white;
+    padding:1px 20px;
+    font-size:14px;
+}
+.title_01 p{
+    clear:both;
+    font-size:12px;
+}
+.dashed {
+    border-bottom: 1px dashed #000;
+}
+.container_bottom{
+        width:1200px;
+        height:250px;
+        /* background:green; */
+        /* margin:0 auto; */
+}
+.title_02{
+        color:white;
+        margin-top:4px;
+        padding-top:30px;
+        float:left;
+        /* width:297px; */
+        /* height:250px; */
+        text-align:left;
+        /** border:solid blue 1px; **/
+}

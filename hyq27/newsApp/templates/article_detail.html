@@ -1,0 +1,35 @@
+{% extends "index.html" %}
+
+{% block content %}
+
+<!--公司简介-->
+<div style="background:#fafafa">
+    <div class="container_inner">
+
+        <div class="left-dir">
+            <div class="title">浙碳新闻</div>
+            <ul>
+                <li>
+                    <a href="/news/article_list">浙碳要闻</a>
+                </li>
+                <li>
+                    <a href="/news/article_list">行业新闻</a>
+                </li>
+                <li>
+                    <a href="/news/article_list">通知公告</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="right_desc">
+            <div class="title_top">浙碳要闻</div>
+            <div class="news_title">{{ article.title }}</div>
+            <div>
+                <p style="margin-left: 20px;margin-right: 20px">{{ article.content }}</p>
+                <p style="margin-left: 20px;margin-right: 20px">发布日期：{{ article.published_date }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
